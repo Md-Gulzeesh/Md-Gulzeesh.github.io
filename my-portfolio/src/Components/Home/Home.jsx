@@ -3,6 +3,7 @@ import "./Home.css";
 import Avatar from "../../Assets/Profile_Image/linkedin-photo.jpeg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import TextTransition, { presets } from "react-text-transition";
+import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf"
 
 const TEXTS = [
   "MERN Developer",
@@ -27,7 +28,7 @@ const Home = () => {
     <section id="home">
       <div className="details">
         <h1>
-          Hi,<span className="waving" data-hover="👋"></span>
+          Hi,
           <br />
           I'm Md <span className="name">Gulzeesh</span>
         </h1>
@@ -38,8 +39,12 @@ const Home = () => {
         </h1>
 
         <div className="call_section">
-          <button className="outline_btn">Resume</button>
-          <button className="solid_btn">Let's Talk</button>
+          <a href={PATH} download="Md Gulzeesh Resume">
+            <button className="outline_btn">Resume</button>
+          </a>
+          <a href="##">
+            <button className="solid_btn">Let's Talk</button>
+          </a>
         </div>
         <div className="social">
           <a
