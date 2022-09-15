@@ -4,10 +4,11 @@
 }
 #home {
   width: 80%;
-  margin: 5rem auto;
+  height: 100vh;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 10% 1%;
 }
 h1 {
   font-size: var(--big-font);
@@ -16,7 +17,24 @@ h1 {
   color: orange;
 }
 .call_section {
-  margin: 0.5rem auto;
+  /* border: 1px solid red; */
+  /* margin: 0.5rem auto; */
+  padding: 1rem 0 0 0;
+}
+.social{
+  /* margin: 1rem auto; */
+  padding: 1rem 0 0 0;
+  font-size: 1.5rem;
+}
+.social a{
+  text-decoration: none;
+  color: black;
+  margin: auto 0.5rem;
+  transition: all 300ms ease-in-out;
+}
+.social a:hover{
+  color: orange;
+  transform:translateY(-10rem);
 }
 .outline_btn {
   padding: 0.75rem 1.2rem;
@@ -27,7 +45,7 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
   outline: none;
-  margin: auto 1rem;
+  margin: 0 1rem 0 0;
   transition: all 250ms ease-in-out;
 }
 
