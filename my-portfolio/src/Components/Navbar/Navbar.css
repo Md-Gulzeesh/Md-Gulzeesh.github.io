@@ -1,7 +1,7 @@
 :root {
   /* --color-bg : #1f1f38 ; */
   --color-background: #eff4fd;
-  --color-bg: rgb(243, 159, 3);
+  --color-bg: #ffc234;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -28,6 +28,9 @@ nav {
   transition: all 350ms ease-in;
 }
 nav a {
+  text-decoration: none;
+  outline: none;
+  border: none;
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
@@ -44,6 +47,14 @@ nav a.active {
   transition: all 350ms ease-in;
 }
 
+@media only screen and (max-width: 821px){
+      nav a:hover{
+        background: none;
+      }
+      nav{
+        bottom: 1rem;
+      }
+}
 /* Galaxy Fold */
 @media only screen and (max-width: 280px) {
   nav {
@@ -54,5 +65,8 @@ nav a.active {
   nav a {
     padding: 0.7rem;
     font-size: 1rem;
+  }
+  nav a:hover {
+    background:none;
   }
 }

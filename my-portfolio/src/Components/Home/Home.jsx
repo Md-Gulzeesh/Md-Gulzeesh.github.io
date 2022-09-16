@@ -4,12 +4,12 @@ import Avatar from "../../Assets/Profile_Image/linkedin-photo.jpeg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import TextTransition, { presets } from "react-text-transition";
 import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf"
+import Button from "../Button/Button";
 
 const TEXTS = [
   "MERN Developer",
   "Ready to Explore",
   "React Developer",
-  "Full Stack Developer",
   "Enthusiastic",
 ];
 
@@ -40,10 +40,12 @@ const Home = () => {
 
         <div className="call_section">
           <a href={PATH} download="Md Gulzeesh Resume">
-            <button className="outline_btn">Resume</button>
+            {/* <button className="outline_btn">Resume</button> */}
+            <Button className="outline_btn">Resume</Button>
           </a>
           <a href="##">
-            <button className="solid_btn">Let's Talk</button>
+            {/* <button className="solid_btn">Let's Talk</button> */}
+            <Button>Let's Talk</Button>
           </a>
         </div>
         <div className="social">

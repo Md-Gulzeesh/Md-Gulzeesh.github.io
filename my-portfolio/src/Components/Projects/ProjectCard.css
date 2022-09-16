@@ -1,0 +1,15 @@
+.projectCard{
+ background : white;
+ padding : 1.3rem ;
+ border-radius : 1rem ;
+ border : 1px solid transparent ;
+ transition : all 400ms ease ;
+}
+.projectCard:hover {
+ border-color : black ;
+ background : transparent ;
+}
+.projectCard img{
+    width: 100%;
+    border-radius: 1rem;
+}
