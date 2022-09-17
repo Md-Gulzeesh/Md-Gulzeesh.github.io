@@ -36,3 +36,41 @@ hr {
     width: 80%;
     margin: 0.5rem auto;
 }
+.email{
+    text-decoration: none;
+    color: orange;
+}
+/* ******************Responsive*********************** */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 821px) {
+   .about_container{
+    flex-direction: column;
+   }
+   .about_details h2,p{
+    width: 100%;
+   }
+   #about{
+    padding: 3rem;
+   }
+   .about_img{
+    width: 200px;
+    margin-bottom: 1rem;
+   }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #about{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  
+} */
+
+
+/* Galaxy Fold */
+/* @media only screen and (max-width: 280px) {
+   
+} */

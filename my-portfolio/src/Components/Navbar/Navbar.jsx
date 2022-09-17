@@ -26,19 +26,20 @@ const Navbar = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#project"
-        onClick={() => setActiveNav("#project")}
-        className={activeNav === "#project" ? "active" : ""}
-      >
-        <BiBook />
-      </a>
-      <a
         href="#skills"
         onClick={() => setActiveNav("#skills")}
         className={activeNav === "#skills" ? "active" : ""}
       >
         <FaToolbox />
       </a>
+      <a
+        href="#project"
+        onClick={() => setActiveNav("#project")}
+        className={activeNav === "#project" ? "active" : ""}
+      >
+        <BiBook />
+      </a>
+
       <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}

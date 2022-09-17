@@ -4,8 +4,8 @@ import My_Image from "../../Assets/Profile_Image/linkedin-photo.jpeg";
 const About = () => {
   return (
     <section id="about">
-      <h5 className="about_heading">Get To Know</h5>
-      <h2 className="about_heading">About Me</h2>
+      <h4 className="about_heading">Get To Know</h4>
+      <h1 className="about_heading">About Me</h1>
       <hr />
       <div className="about_container">
         <div className="about_img">
@@ -24,7 +24,7 @@ const About = () => {
           </p>
           <p>
             Let's Connect @
-            <a href="mailto: gulzeesh2000@gmail.com">gulzeesh2000@gmail.com</a>
+            <a className="email" href="mailto: gulzeesh2000@gmail.com"> gulzeesh2000@gmail.com</a>
           </p>
         </div>
       </div>

@@ -68,6 +68,18 @@ const Home = () => {
       <div>
         <img src={Avatar} alt="profile" className="avatar" />
       </div>
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
   );
 };

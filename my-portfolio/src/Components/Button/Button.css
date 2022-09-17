@@ -85,3 +85,27 @@
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+@media only screen and (max-width: 821px){
+  .solid_btn:hover{
+  padding: 0.75rem 1.2rem;
+  border: 1px solid ;
+  border-radius: 0.4rem;
+  background-color: #ffc234;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  margin: auto 1rem;
+  animation: none;
+  }
+  .outline_btn:hover{
+    padding: 0.75rem 1.2rem;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  color: black;
+  background-color: transparent;
+  font-size: 1rem;
+  outline: none;
+  margin: 0 1rem 0 0;
+  animation: none;
+  }
+}

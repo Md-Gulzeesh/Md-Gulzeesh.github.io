@@ -4,6 +4,7 @@ import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
 import {useEffect,useState} from "react";
+import Skills from "./Components/Skills/Skills";
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -54,12 +55,14 @@ function App() {
     <div className="App">
       <Home />
       <About />
-      <Projects />
+      <Skills/>
+      {/* <Projects /> */}
       <Navbar />
       <div
         className="cursor"
         style={{ left: `${mousePosition.x}px`, top: `${mousePosition.y}px` }}
       ></div>
+      
     </div>
   );
 }
