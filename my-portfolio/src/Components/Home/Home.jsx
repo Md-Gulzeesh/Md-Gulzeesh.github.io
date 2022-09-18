@@ -40,11 +40,9 @@ const Home = () => {
 
         <div className="call_section">
           <a href={PATH} download="Md Gulzeesh Resume" style={{textDecoration:"none"}}>
-            {/* <button className="outline_btn">Resume</button> */}
             <Button className="outline_btn">Resume</Button>
           </a>
-          <a href="##" style={{textDecoration:"none"}}>
-            {/* <button className="solid_btn">Let's Talk</button> */}
+          <a href="#contact" style={{textDecoration:"none"}}>
             <Button>Let's Talk</Button>
           </a>
         </div>

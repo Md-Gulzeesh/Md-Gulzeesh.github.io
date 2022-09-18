@@ -137,7 +137,7 @@ const Projects = () => {
       <hr />
       <div className="projectCardDiv">
         {projectData.map(elem=>(
-          <ProjectCard  ProjectImg={elem.ProjectImg}
+          <ProjectCard key={elem.id} ProjectImg={elem.ProjectImg}
   title={elem.title}
   description={elem.description}
   type={elem.type}

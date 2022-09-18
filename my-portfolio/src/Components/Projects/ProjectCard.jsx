@@ -22,8 +22,8 @@ const ProjectCard = ({
         <p>{features}</p>
         <p>Tools Used:</p>
         <div className="toolsSection">
-          {toolsData.map((elem) => (
-            <span className="toolsBox">
+          {toolsData.map((elem,index) => (
+            <span key={index} className="toolsBox">
               <img
                 style={{ width: "20px" }}
                 src={elem.toolImg}
@@ -35,13 +35,23 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="projectButtons">
-          <a style={{ textDecoration: "none" }} href={github_repo}>
+          <a
+            style={{ textDecoration: "none" }}
+            href={github_repo}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button className="outline_btn">
               Github
               <AiFillGithub style={{ marginLeft: "5px" }} />
             </Button>
           </a>
-          <a style={{ textDecoration: "none" }} href={live_link}>
+          <a
+            style={{ textDecoration: "none" }}
+            href={live_link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button>Live</Button>
           </a>
         </div>

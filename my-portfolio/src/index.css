@@ -1,18 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color: #eff4fd;
+  background-color: #eff4fd;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none;
+  cursor: url("./Assets/cursor.png"), auto;
+  scroll-behavior: smooth;
 }
-@media only screen and (max-width: 820px) {
-    *{
-      cursor: default;
-    }
+@media only screen and (max-width: 1280px) {
+  * {
+    cursor: default;
+  }
+}
+hr {
+  border: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: #ffc234;
+  width: 15%;
+  margin: auto;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 100;
+}
+@media only screen and (max-width: 1280px) {
+  .cursor {
+    display: none;
+  }
 }

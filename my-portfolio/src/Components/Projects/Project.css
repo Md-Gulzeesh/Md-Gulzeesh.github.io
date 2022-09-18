@@ -1,22 +1,12 @@
 #project {
-   height: 100vh;
+   height: fit-content;
     width: 80%;
     margin: auto;
-    padding: 5rem ;
 }
 #project h4,h1{
   text-align: center;
 }
-hr {
-    overflow: visible;
-    padding: 0;
-    border: none;
-    width: 15%;
-    margin: auto;
-    border-top: medium double #ffc234;
-    color: #ffc234;
-    text-align: center;
-}
+
 .projectCardDiv{
  margin: 2rem auto;
  display: grid;
@@ -25,8 +15,17 @@ hr {
  gap: 10px;
 }
 /* ******************Responsive*********************** */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 821px) {
+/* Nest Hub */
+@media only screen and (max-width: 1024px){
+    #project{
+        width: 90%;
+    }
+    .projectCardDiv{
+      gap: 5px;
+    }
+}
+/* Nest Hub css end */
+@media only screen and (max-width: 819px) {
   #project{
     padding: 0;
     margin: 2rem auto;
@@ -37,7 +36,8 @@ hr {
    grid-template-columns: repeat(1,1fr);
   }
 }
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {
-  
-} */
+@media only screen and (min-width: 768px) and (max-width: 820px){
+    .projectCardDiv{
+      padding: 4rem;
+    }
+}
