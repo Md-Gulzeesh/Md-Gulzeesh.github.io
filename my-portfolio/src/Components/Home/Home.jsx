@@ -39,11 +39,11 @@ const Home = () => {
         </h1>
 
         <div className="call_section">
-          <a href={PATH} download="Md Gulzeesh Resume">
+          <a href={PATH} download="Md Gulzeesh Resume" style={{textDecoration:"none"}}>
             {/* <button className="outline_btn">Resume</button> */}
             <Button className="outline_btn">Resume</Button>
           </a>
-          <a href="##">
+          <a href="##" style={{textDecoration:"none"}}>
             {/* <button className="solid_btn">Let's Talk</button> */}
             <Button>Let's Talk</Button>
           </a>

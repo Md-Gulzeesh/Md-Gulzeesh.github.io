@@ -2,7 +2,7 @@
    height: 100vh;
     width: 80%;
     margin: auto;
-    padding: 5rem;
+    padding: 5rem ;
 }
 #project h4,h1{
   text-align: center;
@@ -18,11 +18,26 @@ hr {
     text-align: center;
 }
 .projectCardDiv{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto;
-  gap: 10px;
-  width: 100%;
-  margin: 1rem auto;
-  /* padding: 3rem; */
+ margin: 2rem auto;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: auto;
+ gap: 10px;
 }
+/* ******************Responsive*********************** */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 821px) {
+  #project{
+    padding: 0;
+    margin: 2rem auto;
+    height: fit-content;
+    width: 90%;
+  }
+  .projectCardDiv{
+   grid-template-columns: repeat(1,1fr);
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+  
+} */

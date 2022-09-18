@@ -9,6 +9,8 @@
   outline: none;
   margin: 0 1rem 0 0;
   transition: all 250ms ease-in-out;
+  display: flex;
+  justify-content: baseline;
 }
 
 .outline_btn:hover {

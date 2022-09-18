@@ -1,11 +1,15 @@
 .projectCard{
  background : #F9F9F9;
  border-radius : 1rem ;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
  border : 1px solid transparent ;
  transition : all 400ms ease ;
 }
 .projectCard:hover {
- border-color : black ;
+ border-color : gainsboro ;
  background : transparent ;
 }
 .projectCard img{
@@ -24,4 +28,20 @@
 }
 .projectButtons{
     margin: 0.7rem auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.toolsSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.toolsBox{
+    display: flex;
+    border:1px solid gainsboro;
+    padding:5px;
+    gap: 10px;
+    border-radius:10px;
+    justify-content: space-between;
 }

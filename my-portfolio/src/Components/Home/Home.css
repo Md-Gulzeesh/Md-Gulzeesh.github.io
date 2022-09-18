@@ -134,6 +134,7 @@ h1 {
   color: #ffc234;
 }
 .call_section {
+  display: flex;
   padding: 1rem 0 0 0;
 }
 .social{
@@ -205,7 +206,7 @@ h1 {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 821px) {
    #home{
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     justify-content: space-between;
   }
@@ -222,6 +223,7 @@ h1 {
     align-items: center;
     width: 100%;
     padding: none;
+    /* height: fit-content; */
   }
   .avatar{
     width: 250px;
@@ -248,7 +250,7 @@ h1 {
     #home{
     flex-direction: column-reverse;
     height: max-content;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     padding: none;
   }

@@ -1,30 +1,53 @@
-import React from 'react'
-import { AiFillGithub } from 'react-icons/ai';
-import Button from '../Button/Button';
+import React from "react";
+import { AiFillGithub } from "react-icons/ai";
+import Button from "../Button/Button";
 import "./ProjectCard.css";
-import ProjectImg from "../../Assets/ProjectImages/LiciousImg.PNG";
-const ProjectCard = () => {
+const ProjectCard = ({
+  ProjectImg,
+  title,
+  description,
+  type,
+  features,
+  github_repo,
+  live_link,
+  toolsData,
+}) => {
   return (
     <div className="projectCard">
-      <div className="projectImage">
-        <img src={ProjectImg} alt="" />
-      </div>
+      <img src={ProjectImg} alt="" />
       <div className="projectDetails">
-        <h2>Licious.in Clone</h2>
-        <p>
-          Licious is an online fresh meat Ordering shop. It provides all non-
-          vegetarian food.
-        </p>
-        <p>It was Individual Project executed in 5 days.</p>
-        <p>Major features are location handling ,Authentication.</p>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p>{type}</p>
+        <p>{features}</p>
         <p>Tools Used:</p>
+        <div className="toolsSection">
+          {toolsData.map((elem) => (
+            <span className="toolsBox">
+              <img
+                style={{ width: "20px" }}
+                src={elem.toolImg}
+                alt={elem.toolName}
+                className="icon"
+              />
+              <span className="toolText">{elem.toolName}</span>
+            </span>
+          ))}
+        </div>
         <div className="projectButtons">
-          <Button className="outline_btn">Github</Button>
-          <Button>Live</Button>
+          <a style={{ textDecoration: "none" }} href={github_repo}>
+            <Button className="outline_btn">
+              Github
+              <AiFillGithub style={{ marginLeft: "5px" }} />
+            </Button>
+          </a>
+          <a style={{ textDecoration: "none" }} href={live_link}>
+            <Button>Live</Button>
+          </a>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default ProjectCard
+export default ProjectCard;

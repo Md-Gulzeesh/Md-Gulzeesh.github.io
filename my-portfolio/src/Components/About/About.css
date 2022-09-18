@@ -51,6 +51,7 @@ hr {
    }
    #about{
     padding: 3rem;
+    height: fit-content;
    }
    .about_img{
     width: 200px;

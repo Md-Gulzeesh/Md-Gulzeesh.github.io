@@ -47,20 +47,20 @@ hr{
 }
 /* *********************Responsive***************** */
 @media only screen and (max-width: 821px) {
-    .skillcard_div{
-        grid-template-columns: repeat(3,1fr);
-        gap: 5px;
-    }
-}
-@media only screen and (max-width: 600px) {
     #skills{
         width: 100%;
-        padding: 0;
+        padding: 0%;
+        height: fit-content;
     }
     .skillcard_div{
-        width: 90%;
-        margin: auto;
         grid-template-columns: repeat(2,1fr);
-        gap: 9px;
+        gap: 5px;
+        margin: 0;
+        padding: 10px;
     }
 }
+/* @media only screen and (max-width: 600px) {
+    .skillcard_div{
+        grid-template-columns: repeat(1,1fr);
+    }
+} */
