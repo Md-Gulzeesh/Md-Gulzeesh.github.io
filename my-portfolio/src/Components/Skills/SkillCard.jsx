@@ -1,10 +1,10 @@
 import React from "react";
-
+import styles from "./Skills.module.css";
 const SkillCard = ({img_url,title}) => {
   return (
-    <div className="skillCard">
-      <div className="skillCardImageDiv">
-        <img src={img_url} alt={title} className="skillCardImg" />
+    <div className={styles.skillCard}>
+      <div className={styles.skillCardImageDiv}>
+        <img src={img_url} alt={title} className={styles.skillCardImg} />
       </div>
       <h4>
         <b>

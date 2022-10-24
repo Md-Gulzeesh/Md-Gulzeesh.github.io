@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
+import Github from "./Components/Github/Github";
 function App() {
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "visible") {
@@ -18,6 +19,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Github/>
       <Projects />
       <Contact />
       <Navbar />

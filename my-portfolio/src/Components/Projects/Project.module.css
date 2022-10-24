@@ -21,7 +21,8 @@
         width: 90%;
     }
     .projectCardDiv{
-      gap: 5px;
+      gap: 8px;
+      grid-template-columns: repeat(2,1fr);
     }
 }
 /* Nest Hub css end */

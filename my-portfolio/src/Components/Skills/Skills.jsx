@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import SkillCard from "./SkillCard";
-import "./Skills.css";
+import styles from "./Skills.module.css";
 import HTML from "../../Assets/Skills_logo/HTML.svg";
 import Bootstrap from "../../Assets/Skills_logo/Bootstrap_logo.png";
 import Chankra_Ui from "../../Assets/Skills_logo/Chakra_Ui.png";
@@ -14,6 +14,7 @@ import Node_Js from "../../Assets/Skills_logo/Node_js.png";
 import React_Js from "../../Assets/Skills_logo/React_js.png";
 import React_Router from "../../Assets/Skills_logo/React_Router.png";
 import Redux from "../../Assets/Skills_logo/Redux.png";
+import { ScrollContext } from "../../Context/ScrollContext";
 const Skills = () => {
   const skillData = [
     {
@@ -82,12 +83,14 @@ const Skills = () => {
       img_url: Github,
     },
   ];
+  const {skills} =
+    useContext(ScrollContext);
   return (
-    <section id="skills">
-      <h4 className="skills_heading">Get To Know</h4>
-      <h1 className="skills_heading">My Skills</h1>
+    <section ref={skills} id={styles["skills"]}>
+      <h4 className={styles.skills_heading}>Get To Know</h4>
+      <h1 className={styles.skills_heading}>My Skills</h1>
       <hr />
-      <div className="skillcard_div">
+      <div className={styles.skillcard_div}>
         {skillData.map((elem) => (
           <SkillCard key={elem.id} title={elem.title} img_url={elem.img_url} />
         ))}

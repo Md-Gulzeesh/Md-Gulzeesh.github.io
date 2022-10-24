@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import Button from "../Button/Button";
-import "./ProjectCard.css";
+import styles from "./ProjectCard.module.css";
 const ProjectCard = ({
   ProjectImg,
   title,
@@ -13,35 +13,35 @@ const ProjectCard = ({
   toolsData,
 }) => {
   return (
-    <div className="projectCard">
+    <div className={styles.projectCard}>
       <img src={ProjectImg} alt="" />
-      <div className="projectDetails">
+      <div className={styles.projectDetails}>
         <h2>{title}</h2>
         <p>{description}</p>
         <p>{type}</p>
         <p>{features}</p>
         <p>Tools Used:</p>
-        <div className="toolsSection">
-          {toolsData.map((elem,index) => (
-            <span key={index} className="toolsBox">
+        <div className={styles.toolsSection}>
+          {toolsData.map((elem, index) => (
+            <span key={index} className={styles.toolsBox}>
               <img
                 style={{ width: "20px" }}
                 src={elem.toolImg}
                 alt={elem.toolName}
-                className="icon"
+                className={styles.icon}
               />
-              <span className="toolText">{elem.toolName}</span>
+              <span className={styles.toolText}>{elem.toolName}</span>
             </span>
           ))}
         </div>
-        <div className="projectButtons">
+        <div className={styles.projectButtons}>
           <a
             style={{ textDecoration: "none" }}
             href={github_repo}
             target="_blank"
             rel="noreferrer"
           >
-            <Button className="outline_btn">
+            <Button className={styles.outline_btn}>
               Github
               <AiFillGithub style={{ marginLeft: "5px" }} />
             </Button>

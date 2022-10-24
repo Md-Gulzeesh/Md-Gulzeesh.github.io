@@ -30,6 +30,7 @@
 .email{
     text-decoration: none;
     color: orange;
+    cursor: pointer;
 }
 /* ******************Responsive*********************** */
 /* Nest Hub */

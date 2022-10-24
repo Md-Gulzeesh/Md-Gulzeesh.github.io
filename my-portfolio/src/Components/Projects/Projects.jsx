@@ -1,9 +1,10 @@
-import React from "react";
-import "./Project.css";
+import React, { useContext } from "react";
+import styles from "./Project.module.css";
 import ProjectCard from "./ProjectCard";
 import licious from "../../Assets/ProjectImages/LiciousImg.PNG";
 import rodan from "../../Assets/ProjectImages/rodanandfield.PNG";
 import weatherApp from "../../Assets/ProjectImages/weatherApp.PNG";
+import { ScrollContext } from "../../Context/ScrollContext";
 
 const Projects = () => {
   const projectData = [
@@ -130,21 +131,26 @@ const Projects = () => {
       ],
     },
   ];
+  const { project } =
+    useContext(ScrollContext);
   return (
-    <section id="project">
-      <h4 className="projectHeading">My Work</h4>
-      <h1 className="projectHeading">Projects</h1>
+    <section ref={project} id={styles["project"]}>
+      <h4 className={styles.projectHeading}>My Work</h4>
+      <h1 className={styles.projectHeading}>Projects</h1>
       <hr />
-      <div className="projectCardDiv">
-        {projectData.map(elem=>(
-          <ProjectCard key={elem.id} ProjectImg={elem.ProjectImg}
-  title={elem.title}
-  description={elem.description}
-  type={elem.type}
-  features={elem.features}
-  github_repo={elem.github_repo}
-  live_link={elem.live_link}
-  toolsData={elem.toolsData} />
+      <div className={styles.projectCardDiv}>
+        {projectData.map((elem) => (
+          <ProjectCard
+            key={elem.id}
+            ProjectImg={elem.ProjectImg}
+            title={elem.title}
+            description={elem.description}
+            type={elem.type}
+            features={elem.features}
+            github_repo={elem.github_repo}
+            live_link={elem.live_link}
+            toolsData={elem.toolsData}
+          />
         ))}
       </div>
     </section>
