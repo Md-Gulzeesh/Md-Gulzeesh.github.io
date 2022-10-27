@@ -21,12 +21,11 @@ const Home = () => {
     const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
     return () => clearTimeout(intervalId);
   }, []);
-  const { home } =
-    useContext(ScrollContext);
+  const { home } = useContext(ScrollContext);
   return (
     <section ref={home} id={styles["home"]}>
       <div className={styles.details}>
-        <h1>
+        <h1 className={styles.intro}>
           Hi,
           <br />
           I'm Md <span className={styles.name}>Gulzeesh</span>
@@ -36,7 +35,6 @@ const Home = () => {
             {TEXTS[index % TEXTS.length]}
           </TextTransition>
         </h1>
-
         <div className={styles.call_section}>
           <a
             href={PATH}

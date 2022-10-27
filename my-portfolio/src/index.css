@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url("./Assets/cursor.png"), auto;
+  /* cursor: url("./Assets/cursor.png"), auto; */
   scroll-behavior: smooth;
 }
 @media only screen and (max-width: 1280px) {
@@ -25,7 +25,7 @@ hr {
   width: 15%;
   margin: auto;
 }
-.cursor {
+/* .cursor {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -39,4 +39,4 @@ hr {
   .cursor {
     display: none;
   }
-}
+} */
