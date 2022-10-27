@@ -6,6 +6,7 @@ import TextTransition, { presets } from "react-text-transition";
 import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf";
 import Button from "../Button/Button";
 import { ScrollContext } from "../../Context/ScrollContext";
+import Fade from "react-reveal/Fade";
 
 const TEXTS = [
   "MERN Developer",
@@ -25,51 +26,60 @@ const Home = () => {
   return (
     <section ref={home} id={styles["home"]}>
       <div className={styles.details}>
-        <h1 className={styles.intro}>
-          Hi,
-          <br />
-          I'm Md <span className={styles.name}>Gulzeesh</span>
-        </h1>
-        <h1>
-          <TextTransition direction="down" springConfig={presets.wobbly}>
-            {TEXTS[index % TEXTS.length]}
-          </TextTransition>
-        </h1>
+        <Fade top>
+          <h1 className={styles.intro}>
+            Hi,
+            <br />
+            I'm Md <span className={styles.name}>Gulzeesh</span>
+          </h1>
+          <h1>
+            <TextTransition direction="down" springConfig={presets.wobbly}>
+              {TEXTS[index % TEXTS.length]}
+            </TextTransition>
+          </h1>
+        </Fade>
+
         <div className={styles.call_section}>
           <a
             href={PATH}
             download="Md Gulzeesh Resume"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Button className="outline_btn">Resume</Button>
+            <Fade top>
+              <Button className="outline_btn">Resume</Button>
+            </Fade>
           </a>
           <a
             href="#contact"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Button>Let's Talk</Button>
+            <Fade top>
+              <Button>Let's Talk</Button>
+            </Fade>
           </a>
         </div>
         <div className={styles.social}>
-          <a
-            href="https://www.linkedin.com/in/gulzeesh/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiFillLinkedin style={{ cursor: "pointer" }} />
-          </a>
-          <a
-            href="https://github.com/Md-Gulzeesh"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <AiFillGithub style={{ cursor: "pointer" }} />
-          </a>
+            <a
+              href="https://www.linkedin.com/in/gulzeesh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin style={{ cursor: "pointer" }} />
+            </a>
+            <a
+              href="https://github.com/Md-Gulzeesh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <AiFillGithub style={{ cursor: "pointer" }} />
+            </a>
         </div>
       </div>
-      <div>
-        <img src={Avatar} alt="profile" className={styles.avatar} />
-      </div>
+      <Fade top>
+        <div>
+          <img src={Avatar} alt="profile" className={styles.avatar} />
+        </div>
+      </Fade>
       <ul className={styles.square}>
         <li></li>
         <li></li>
