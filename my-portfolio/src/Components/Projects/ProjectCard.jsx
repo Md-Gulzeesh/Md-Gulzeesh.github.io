@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import Button from "../Button/Button";
 import styles from "./ProjectCard.module.css";
-import Flip from "react-reveal/Flip";
+
 const ProjectCard = ({
   ProjectImg,
   title,
@@ -14,7 +14,6 @@ const ProjectCard = ({
   toolsData,
 }) => {
   return (
-    <Flip left cascade>
       <div className={styles.projectCard}>
         <img src={ProjectImg} alt="" />
         <div className={styles.projectDetails}>
@@ -59,7 +58,6 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-    </Flip>
   );
 };
 

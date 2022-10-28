@@ -7,13 +7,11 @@ import { FaToolbox, FaGithub } from "react-icons/fa";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useContext } from "react";
 import { ScrollContext } from "../../Context/ScrollContext";
-import Slide from "react-reveal/Slide";
 
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#home");
   const { scrollToSection, home, about, skills, github, project, contact } = useContext(ScrollContext);
   return (
-    <Slide bottom cascade>
       <nav>
         <a
           href="#home"
@@ -78,7 +76,6 @@ const Navbar = () => {
           <BiMessageSquareDetail />
         </a>
       </nav>
-    </Slide>
   );
 };
 

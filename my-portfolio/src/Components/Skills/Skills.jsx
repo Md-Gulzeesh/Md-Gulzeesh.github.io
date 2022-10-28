@@ -15,7 +15,7 @@ import React_Js from "../../Assets/Skills_logo/React_js.png";
 import React_Router from "../../Assets/Skills_logo/React_Router.png";
 import Redux from "../../Assets/Skills_logo/Redux.png";
 import { ScrollContext } from "../../Context/ScrollContext";
-import Fade from "react-reveal/Fade";
+
 const Skills = () => {
   const skillData = [
     {
@@ -87,13 +87,10 @@ const Skills = () => {
   const { skills } = useContext(ScrollContext);
   return (
     <section ref={skills} id={styles["skills"]}>
-      <Fade top cascade>
         <h4 className={styles.skills_heading}>Get To Know</h4>
         <h1 className={styles.skills_heading}>My Skills</h1>
         <hr />
-      </Fade>
         <div className={styles.skillcard_div}>
-          <Fade bottom>
           {skillData.map((elem) => (
             <SkillCard
               key={elem.id}
@@ -101,7 +98,6 @@ const Skills = () => {
               img_url={elem.img_url}
             />
           ))}
-      </Fade>
         </div>
     </section>
   );

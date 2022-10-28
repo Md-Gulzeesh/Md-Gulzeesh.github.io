@@ -5,7 +5,6 @@ import licious from "../../Assets/ProjectImages/LiciousImg.PNG";
 import rodan from "../../Assets/ProjectImages/rodanandfield.PNG";
 import weatherApp from "../../Assets/ProjectImages/weatherApp.PNG";
 import { ScrollContext } from "../../Context/ScrollContext";
-import Fade from "react-reveal/Fade";
 
 const Projects = () => {
   const projectData = [
@@ -136,11 +135,9 @@ const Projects = () => {
     useContext(ScrollContext);
   return (
     <section ref={project} id={styles["project"]}>
-      <Fade top cascade>
         <h4 className={styles.projectHeading}>My Work</h4>
         <h1 className={styles.projectHeading}>Projects</h1>
         <hr />
-      </Fade>
         <div className={styles.projectCardDiv}>
           {projectData.map((elem) => (
             <ProjectCard

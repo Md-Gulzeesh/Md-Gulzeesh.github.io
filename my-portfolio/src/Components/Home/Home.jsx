@@ -6,7 +6,6 @@ import TextTransition, { presets } from "react-text-transition";
 import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf";
 import Button from "../Button/Button";
 import { ScrollContext } from "../../Context/ScrollContext";
-import Fade from "react-reveal/Fade";
 
 const TEXTS = [
   "MERN Developer",
@@ -26,7 +25,6 @@ const Home = () => {
   return (
     <section ref={home} id={styles["home"]}>
       <div className={styles.details}>
-        <Fade top>
           <h1 className={styles.intro}>
             Hi,
             <br />
@@ -37,7 +35,6 @@ const Home = () => {
               {TEXTS[index % TEXTS.length]}
             </TextTransition>
           </h1>
-        </Fade>
 
         <div className={styles.call_section}>
           <a
@@ -45,17 +42,13 @@ const Home = () => {
             download="Md Gulzeesh Resume"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Fade top>
               <Button className="outline_btn">Resume</Button>
-            </Fade>
           </a>
           <a
             href="#contact"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Fade top>
               <Button>Let's Talk</Button>
-            </Fade>
           </a>
         </div>
         <div className={styles.social}>
@@ -75,11 +68,9 @@ const Home = () => {
             </a>
         </div>
       </div>
-      <Fade top>
         <div>
           <img src={Avatar} alt="profile" className={styles.avatar} />
         </div>
-      </Fade>
       <ul className={styles.square}>
         <li></li>
         <li></li>
