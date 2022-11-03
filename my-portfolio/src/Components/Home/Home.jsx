@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styles from "./Home.module.css";
-import Avatar from "../../Assets/Profile_Image/linkedin-photo.jpeg";
+import Avatar from "../../Assets/Profile_Image/linkedin-photo.png";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import TextTransition, { presets } from "react-text-transition";
 import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf";

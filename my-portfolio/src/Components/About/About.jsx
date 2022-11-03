@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./About.module.css";
-import My_Image from "../../Assets/Profile_Image/linkedin-photo.jpeg";
+import My_Image from "../../Assets/Profile_Image/linkedin-photo.png";
 import { useContext } from "react";
 import { ScrollContext } from "../../Context/ScrollContext";
 
