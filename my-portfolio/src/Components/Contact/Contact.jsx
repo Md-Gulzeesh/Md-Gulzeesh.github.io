@@ -7,7 +7,7 @@ const Contact = () => {
   const { contact } =
     useContext(ScrollContext);
   return (
-    <section ref={contact} id={styles["contact"]}>
+    <section ref={contact} id={styles.contact}>
         <h4 className={styles.contact_heading}>Let's Connect</h4>
         <h1 className={styles.contact_heading}>Contact</h1>
         <hr />
