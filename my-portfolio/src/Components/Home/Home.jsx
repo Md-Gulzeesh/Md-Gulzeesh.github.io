@@ -72,7 +72,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <img src={Avatar} alt="profile" className={styles.avatar} />
+        <img src={Avatar} alt="profile" className={styles.avatar} loading="lazy" />
       </div>
       <ul className={styles.square}>
         <li></li>

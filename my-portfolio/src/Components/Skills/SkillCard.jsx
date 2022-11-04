@@ -4,7 +4,7 @@ const SkillCard = ({img_url,title}) => {
   return (
     <div className={styles.skillCard}>
       <div className={styles.skillCardImageDiv}>
-        <img src={img_url} alt={title} className={styles.skillCardImg} />
+        <img src={img_url} alt={title} className={styles.skillCardImg} loading="lazy" />
       </div>
       <h4>
         <b>

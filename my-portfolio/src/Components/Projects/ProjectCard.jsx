@@ -15,7 +15,7 @@ const ProjectCard = ({
 }) => {
   return (
       <div className={styles.projectCard}>
-        <img src={ProjectImg} alt="" />
+        <img src={ProjectImg} alt="" loading="lazy" />
         <div className={styles.projectDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
@@ -30,6 +30,7 @@ const ProjectCard = ({
                   src={elem.toolImg}
                   alt={elem.toolName}
                   className={styles.icon}
+                  loading="lazy"
                 />
                 <span className={styles.toolText}>{elem.toolName}</span>
               </span>

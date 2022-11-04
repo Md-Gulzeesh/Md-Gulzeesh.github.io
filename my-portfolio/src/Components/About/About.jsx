@@ -13,7 +13,7 @@ const About = () => {
         <hr />
       <div className={styles.about_container}>
           <div className={styles.about_img}>
-            <img src={My_Image} alt="Profile" className={styles.about_img} />
+            <img src={My_Image} alt="Profile" className={styles.about_img} loading="lazy" />
           </div>
           <div className={styles.about_details}>
             <h2>
