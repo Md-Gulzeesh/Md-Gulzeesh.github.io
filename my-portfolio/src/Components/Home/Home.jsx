@@ -16,16 +16,14 @@ const TEXTS = [
 
 const Home = () => {
   const [index, setIndex] = React.useState(0);
-  const { scrollToSection, contact } =
-    useContext(ScrollContext);
+  const { scrollToSection, contact, home } = useContext(ScrollContext);
 
   React.useEffect(() => {
     const intervalId = setInterval(() => setIndex((index) => index + 1), 3000);
     return () => clearTimeout(intervalId);
   }, []);
-  const { home } = useContext(ScrollContext);
   return (
-    <section ref={home} id={styles["home"]}>
+    <section ref={home} id={styles.home}>
       <div className={styles.details}>
         <h1 className={styles.intro}>
           Hi,

@@ -86,7 +86,7 @@ const Skills = () => {
   ];
   const { skills } = useContext(ScrollContext);
   return (
-    <section ref={skills} id={styles["skills"]}>
+    <section ref={skills} id={styles.skills}>
         <h4 className={styles.skills_heading}>Get To Know</h4>
         <h1 className={styles.skills_heading}>My Skills</h1>
         <hr />

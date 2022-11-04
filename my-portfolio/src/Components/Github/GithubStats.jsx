@@ -9,7 +9,6 @@ const GithubStats = () => {
           src="https://github-readme-streak-stats.herokuapp.com/?user=Md-Gulzeesh&theme=vision-friendly-dark"
           alt="githubstats"
           width="90%"
-          loading='lazy'
         />
       </a>
     </div>

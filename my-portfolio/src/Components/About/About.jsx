@@ -7,13 +7,13 @@ import { ScrollContext } from "../../Context/ScrollContext";
 const About = () => {
   const { about } = useContext(ScrollContext);
   return (
-    <section ref={about} id={styles["about"]}>
+    <section ref={about} id={styles.about}>
         <h4 className={styles.about_heading}>Get To Know</h4>
         <h1 className={styles.about_heading}>About Me</h1>
         <hr />
       <div className={styles.about_container}>
           <div className={styles.about_img}>
-            <img src={My_Image} alt="Profile" className={styles.about_img} loading="lazy" />
+            <img src={My_Image} alt="Profile" className={styles.about_img} />
           </div>
           <div className={styles.about_details}>
             <h2>

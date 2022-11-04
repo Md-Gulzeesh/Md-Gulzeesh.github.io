@@ -4,8 +4,7 @@ import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { ScrollContext } from '../../Context/ScrollContext';
 
 const Contact = () => {
-  const { contact } =
-    useContext(ScrollContext);
+  const { contact } = useContext(ScrollContext);
   return (
     <section ref={contact} id={styles.contact}>
         <h4 className={styles.contact_heading}>Let's Connect</h4>
