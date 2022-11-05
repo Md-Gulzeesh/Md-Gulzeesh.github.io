@@ -1,5 +1,5 @@
 .projectCard{
- background : #F9F9F9;
+ background : var(--white-color);
  border-radius : 1rem ;
  display: flex;
  flex-direction: column;

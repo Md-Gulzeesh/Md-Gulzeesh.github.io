@@ -16,13 +16,13 @@ function App() {
   });
   return (
     <div className="App">
+      <Navbar />
       <Home />
       <About />
       <Skills />
-      <Github/>
+      <Github />
       <Projects />
       <Contact />
-      <Navbar />
     </div>
   );
 }

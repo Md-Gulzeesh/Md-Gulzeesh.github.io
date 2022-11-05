@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import licious from "../../Assets/ProjectImages/LiciousImg.PNG";
 import rodan from "../../Assets/ProjectImages/rodanandfield.PNG";
 import weatherApp from "../../Assets/ProjectImages/weatherApp.PNG";
+import stylecraze from "../../Assets/ProjectImages/stylecraze.PNG";
 import { ScrollContext } from "../../Context/ScrollContext";
 
 const Projects = () => {
@@ -127,6 +128,33 @@ const Projects = () => {
           toolImg:
             "https://cdn.vox-cdn.com/thumbor/KqYnd6YgxZ6yJvyBCk-heGXYEMM=/0x0:1280x800/1400x1400/filters:focal(640x400:641x401)/cdn.vox-cdn.com/uploads/chorus_asset/file/19700731/googlemaps.png",
           toolName: "Google Map",
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "Stylecraze.com Clone",
+      description:
+        "Stylecrazewebsite is a women's beauty and health tips website. Here you can get tips related to beauty and health.",
+      type: "A collaborative project executed in 5 days with 4 teammates.",
+      features: "Main features are hyperlink of pages,good UI",
+      ProjectImg: stylecraze,
+      github_repo: "https://github.com/srbhkumar624/stylecrazewebsite",
+      live_link: "https://srbhkumar624.github.io/stylecrazewebsite/",
+      toolsData: [
+        {
+          toolImg:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png",
+          toolName: "Js",
+        },
+        {
+          toolImg: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+          toolName: "HTML",
+        },
+        {
+          toolImg:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+          toolName: "CSS",
         },
       ],
     },

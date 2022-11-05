@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .contact_icons {
-  color: #ffc234;
+  color: var(--primary-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
   cursor: pointer;

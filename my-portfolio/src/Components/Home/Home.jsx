@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import styles from "./Home.module.css";
-import Avatar from "../../Assets/Profile_Image/Profile.jpg";
+import Avatar from "../../Assets/Profile_Image/Profile_2.jpg";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { HiDownload } from "react-icons/hi";
 import TextTransition, { presets } from "react-text-transition";
 import PATH from "../../Assets/Resume/Md_Gulzeesh_Resume.pdf";
 import Button from "../Button/Button";
@@ -42,7 +43,7 @@ const Home = () => {
             download="Md Gulzeesh Resume"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Button className="outline_btn">Resume</Button>
+            <Button className="outline_btn">Resume <HiDownload style={{marginLeft:"3px"}}/></Button>
           </a>
           <a
             href="#contact"
