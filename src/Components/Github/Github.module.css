@@ -1,0 +1,24 @@
+#github {
+  height:fit-content;
+  width: 95%;
+  margin: 3rem auto;
+  padding-top: 4rem;
+}
+.github_heading {
+  text-align: center;
+}
+
+.github_stats {
+  width: 80%;
+  text-align: center;
+  margin: 15px auto;
+}
+/* ******************Responsive*********************** */
+@media only screen and (max-width: 821px) {
+  .calender {
+    width: 90%;
+  }
+  .github_stats {
+    width: 90%;
+  }
+}

@@ -1,0 +1,82 @@
+nav {
+  background-color: #eff4fd;
+  width: max-content;
+  padding: 0.4rem 1.7rem;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.8rem;
+  transition: all 350ms ease-in;
+}
+nav a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--black-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+nav a.active {
+  background: var(--primary-color);
+  color: var(--white-color);
+  transition: all 350ms ease-in;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color:var(--white-color);
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0.6rem;
+    padding: 5px;
+    color: var(--black-color);
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 250ms ease;
+}
+.navbar a:hover{
+    background-color: var(--primary-color);
+    color:var(--white-color);
+    transform: translateX(0.3rem);
+}
+.navbar>div{
+    display: flex;
+    justify-content: baseline;
+}
+
+
+
+
+@media only screen and (max-width: 821px) {
+  nav {
+    bottom: 0;
+    width: 100%;
+     justify-content: space-evenly;
+    gap: 0.5rem;
+  }
+}
+/* Galaxy Fold */
+@media only screen and (max-width: 340px) {
+  nav {
+    width: 98%;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+  }
+  nav a {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
