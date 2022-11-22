@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.90dc2dff.css",
-    "main.js": "/static/js/main.d47eb3bc.js",
+    "main.js": "/static/js/main.f8613319.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/LiciousImg.PNG": "/static/media/LiciousImg.008d0a47d60813876359.PNG",
     "static/media/stylecraze.PNG": "/static/media/stylecraze.51d6e35bda604a900889.PNG",
@@ -9,7 +9,7 @@
     "static/media/rodanandfield.PNG": "/static/media/rodanandfield.7f0d72cd79366f649598.PNG",
     "static/media/React_js.png": "/static/media/React_js.81ed438b18e24116794d.png",
     "static/media/Chakra_Ui.png": "/static/media/Chakra_Ui.97bec71cc2b48d412b2b.png",
-    "static/media/Md_Gulzeesh_Resume.pdf": "/static/media/Md_Gulzeesh_Resume.b26deaf40b67c7dc0c35.pdf",
+    "static/media/Md_Gulzeesh_Resume.pdf": "/static/media/Md_Gulzeesh_Resume.73b1a1bafd6e8b155677.pdf",
     "static/media/Profile_2.jpg": "/static/media/Profile_2.38857ca3dbcbdf133be3.jpg",
     "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
     "static/media/Bootstrap_logo.png": "/static/media/Bootstrap_logo.c5dedb5348b058d36661.png",
@@ -21,11 +21,11 @@
     "static/media/HTML.svg": "/static/media/HTML.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/JavaScript.svg": "/static/media/JavaScript.b879f838faf1cb951d1c2230fd933a39.svg",
     "main.90dc2dff.css.map": "/static/css/main.90dc2dff.css.map",
-    "main.d47eb3bc.js.map": "/static/js/main.d47eb3bc.js.map",
+    "main.f8613319.js.map": "/static/js/main.f8613319.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.90dc2dff.css",
-    "static/js/main.d47eb3bc.js"
+    "static/js/main.f8613319.js"
   ]
 }
