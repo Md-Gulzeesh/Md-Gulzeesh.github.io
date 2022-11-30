@@ -76,17 +76,6 @@
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-}
 @media only screen and (max-width: 821px){
   .solid_btn:hover{
   padding: 0.75rem 1.2rem;

@@ -43,7 +43,7 @@ const Home = () => {
             download="Md Gulzeesh Resume"
             style={{ textDecoration: "none", cursor: "pointer" }}
           >
-            <Button className="outline_btn">Resume <HiDownload style={{marginLeft:"3px"}}/></Button>
+            <Button className="outline_btn">Resume <HiDownload className={styles.downloadIcon}/></Button>
           </a>
           <a
             href="#contact"
