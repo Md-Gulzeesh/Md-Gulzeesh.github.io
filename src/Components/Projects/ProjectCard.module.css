@@ -38,12 +38,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 5px;
 }
 .toolsBox{
     display: flex;
     border:1px solid gainsboro;
     padding:5px;
-    gap: 10px;
+    gap: 5px;
     border-radius:10px;
     justify-content: space-between;
 }

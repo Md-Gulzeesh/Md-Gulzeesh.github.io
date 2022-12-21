@@ -17,8 +17,7 @@
   background-color: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
-  animation: shake 0.6s;
-  animation-iteration-count: 1;
+  border-radius: 4px 4px 20px 20px;
 }
 .solid_btn {
   padding: 0.75rem 1.2rem;
@@ -37,44 +36,7 @@
   background-color: transparent;
   border: 1px solid black;
   color: black;
-   animation: shake 0.6s;
-  animation-iteration-count: 1;
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
+  border-radius: 4px 50% 50% 4px ;
 }
 @media only screen and (max-width: 821px){
   .solid_btn:hover{
@@ -86,7 +48,6 @@
   font-size: 1rem;
   outline: none;
   margin: auto 1rem;
-  animation: none;
   }
   .outline_btn:hover{
     padding: 0.75rem 1.2rem;
@@ -97,6 +58,5 @@
   font-size: 1rem;
   outline: none;
   margin: 0 1rem 0 0;
-  animation: none;
   }
 }
