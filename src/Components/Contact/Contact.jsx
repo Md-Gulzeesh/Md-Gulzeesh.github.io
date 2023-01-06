@@ -45,7 +45,7 @@ const Contact = () => {
           </div>
       </div>
         <p>
-          © 2022 Designed and Built by{" "}
+          © 2023 Designed and Built by{" "}
           <span style={{ color: "#ffc234" }}>Md Gulzeesh</span> with ❤️
         </p>
     </section>
