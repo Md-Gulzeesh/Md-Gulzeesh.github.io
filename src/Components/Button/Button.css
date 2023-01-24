@@ -11,17 +11,18 @@
   transition: all 250ms ease-in-out;
   display: flex;
   justify-content: baseline;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .outline_btn:hover {
   background-color: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
-  border-radius: 4px 4px 20px 20px;
+  transform: scale(1.05) rotate(-1deg);
 }
 .solid_btn {
   padding: 0.75rem 1.2rem;
-  border: 1px solid ;
+  border: 0;
   border-radius: 0.4rem;
   background-color: var(--primary-color);
   color: white;
@@ -30,33 +31,34 @@
   outline: none;
   margin: auto 1rem;
   transition: all 250ms ease-in-out;
- 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.solid_btn:hover{
+.solid_btn:hover {
   background-color: transparent;
   border: 1px solid black;
   color: black;
-  border-radius: 4px 50% 50% 4px ;
+  transform: scale(1.05) rotate(-1deg);
 }
-@media only screen and (max-width: 821px){
-  .solid_btn:hover{
-  padding: 0.75rem 1.2rem;
-  border: 1px solid ;
-  border-radius: 0.4rem;
-  background-color: var(--primary-color);
-  color: white;
-  font-size: 1rem;
-  outline: none;
-  margin: auto 1rem;
-  }
-  .outline_btn:hover{
+@media only screen and (max-width: 821px) {
+  .solid_btn:hover {
     padding: 0.75rem 1.2rem;
-  border: 1px solid black;
-  border-radius: 0.4rem;
-  color: black;
-  background-color: transparent;
-  font-size: 1rem;
-  outline: none;
-  margin: 0 1rem 0 0;
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    margin: auto 1rem;
+    transform: none;
+  }
+  .outline_btn:hover {
+    padding: 0.75rem 1.2rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    color: black;
+    background-color: transparent;
+    font-size: 1rem;
+    outline: none;
+    margin: 0 1rem 0 0;
+    transform: none;
   }
 }

@@ -36,6 +36,7 @@ h1 {
   background-size: cover;
   border-radius: 52% 48% 69% 31% / 69% 50% 50% 31%;
   animation: upDown 1s ease-in-out infinite alternate;
+  filter: drop-shadow(5px 5px 20px var(--primary-color));
 }
 .downloadIcon{
   margin-left: 3px;
