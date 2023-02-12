@@ -83,6 +83,12 @@ const Skills = () => {
       title: "GitHub",
       img_url: Github,
     },
+    {
+      id: 14,
+      title: "Figma",
+      img_url:
+        "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    },
   ];
   const { skills } = useContext(ScrollContext);
   return (
