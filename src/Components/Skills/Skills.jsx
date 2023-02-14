@@ -89,12 +89,23 @@ const Skills = () => {
       img_url:
         "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
     },
+    {
+      id: 15,
+      title: "Vite Js",
+      img_url:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/2078px-Vitejs-logo.svg.png",
+    },
+    {
+      id: 16,
+      title: "Create React App",
+      img_url: "https://cdn.worldvectorlogo.com/logos/create-react-app.svg",
+    },
   ];
   const { skills } = useContext(ScrollContext);
   return (
     <section ref={skills} id={styles.skills}>
         {/* <h4 className={styles.skills_heading}>Get To Know</h4> */}
-        <h1 className={styles.skills_heading}>My Skills</h1>
+        <h1 className={styles.skills_heading}>My Tools & Skills</h1>
         <hr />
         <div className={styles.skillcard_div}>
           {skillData.map((elem) => (
